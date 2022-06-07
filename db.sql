@@ -1,5 +1,6 @@
 CREATE DATABASE empleados;
 
+\c empleados
 CREATE TABLE empleado(
 id SERIAL PRIMARY KEY,
 nombre VARCHAR(20),

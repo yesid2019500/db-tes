@@ -1,5 +1,6 @@
 // este objecto pool es la conecion a la base de datos
-const pool = require('../pg')
+
+const { pool } = require('../pg')
 
 const getAllTasks = async (req, res, next) => {
     try {
