@@ -5,7 +5,10 @@ const app = express();
 // git push heroku master
 // heroku logs --tail
 
-console.log('arranca')
+app.get('/', (req,res)=> {
+    res.send('hellow')
+})
+
 // SERVER
-app.listen(process.env.PORT || 3001)
-console.log('server on port', process.env.PORT || 3001);
+app.listen(process.env.PORT || 3002)
+console.log('server on port', process.env.PORT || 3002);
